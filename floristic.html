@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="styles.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="assets/woothemes-FlexSlider-8b3766e/flexslider.css" type="text/css" media="screen" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">x3C/script>')</script>
+	<script defer src="assets/woothemes-FlexSlider-8b3766e/jquery.flexslider.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<header>
+		<a class="logo" href="index.html">На главную</a>
+	</header>
+	<nav>
+		<ul>
+			<a href="about.html">О нас</a>
+			<a href="costs.html">Цены</a>
+			<a href="transport.html">Доставка</a>
+			<a href="contacts.html">Контакты</a>
+		</ul>
+	</nav>
+	<main>
+		<!--lorem-->
+		<p>Et augue vitae nunc tristique vehicula. Suspendisse eget elit. Duis
+		adipiscing dui non quam.</p>
+		<p>Duis posuere tortor sit amet est iaculis egestas. Ut at magna. Etiam dui
+		nisi, blandit quis, fermentum vitae, auctor vel, sem. Cras et leo. Vestibulum
+		ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+		Proin luctus, odio eu porttitor adipiscing, ante elit tristique tortor, sit
+		amet malesuada tortor nisi sit amet neque. Praesent rhoncus eros non velit.
+		Pellentesque mattis. Sed sit amet ante. Mauris ac nibh eget risus volutpat
+		tempor. Praesent volutpat sollicitudin dui. Sed in tellus id urna viverra
+		commodo. Vestibulum enim felis, interdum.</p>
+		<!--/lorem-->
+		<center>
+			<div class="flexslider imager">
+				<ul class="slides">
+					<li><img src="assets/цветы/IMG_4276.JPG" alt=""></li>
+					<li><img src="assets/цветы/IMG_4277.JPG" alt=""></li>
+					<li><img src="assets/цветы/IMG_4280.JPG" alt=""></li>
+					<li><img src="assets/цветы/IMG_4281.JPG" alt=""></li>
+					<li><img src="assets/цветы/IMG_4284.JPG" alt=""></li>
+				</ul>
+			</div>
+		</center>
+	</main>
+	<script type="text/javascript">
+		$(window).load(function(){
+			$('.flexslider').flexslider({
+				animation: "slide",
+				controlNav: "thumbnails",
+				start: function(slider){ $('body').removeClass('loading'); }
+			});
+		});
+	</script>
+</body>
+</html>
+
