@@ -1,14 +1,18 @@
+@import "http://webfonts.ru/import/andika.css";
 * {
 	color: rgba(152,192,0,1.0);
-}
-html, body, main, nav, header {
+	font-family: 'Andika';
 	padding:			0;
 	margin:				0;
 }
-html, body, main {
+html, body {
 	width:				100%;
 	height:				100%;
 }
+main, nav, header {
+	padding: 0 5px;
+}
+
 body {
 	background:			rgba(61,76,83,1.0); /*url(assets/background.png);*/
 }
@@ -70,5 +74,4 @@ h6, h3 {
 
 .imager {
 	width:				750px;
-	height:				450px;
 }
