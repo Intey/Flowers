@@ -1,14 +1,16 @@
-@import "http://webfonts.ru/import/america.css";
+/* @import "http://webfonts.ru/import/america.css"; */
+@import "http://webfonts.ru/import/beermoney.css";
 
-* {
-	color:				#000;
-	font-family:		'America XIX';
+html, body, main, nav, header, a, div, span {
+	color:				black;
+	/* font-family:		'America XIX'; */
+	font-family:		'Beer Money';
+	font-size:			24px;
 	padding:			0;
 	margin:				0;
 }
-html, body {
-	width:				100%;
-	height:				100%;
+html{
+	background:			url(images/light_grey.png);
 }
 main, nav{
 	padding:			0 5px;
@@ -17,10 +19,14 @@ main, nav{
 header {
 	margin:				0 auto;
 	padding:			0;
+	background:			rgba(0,0,0,0.4);
 }
 
 body {
-	background:			url(background.png);
+	width:				750px;
+	background:			rgba(0,0,0,0.2);
+	margin:				0px auto;
+	padding:			40px 10px;
 }
 
 header { 
@@ -35,25 +41,21 @@ p {
 	padding:			20px 40px;
 }
 a {
-	padding:			10px;
 	font-size:			36px;
 	text-decoration:	none;
 	cursor:				pointer;
-	padding:			0 10px;
 }
-a:hover {
-	color:				#444;
-	-webkit-transform:	scale(1);
+h6 {
+	font-size:			36px;
 }
+
+h3 {
+	font-size:			24px;
+}
+
 ul {
 	padding:			0;
 	margin:				0;
-}
-a.logo {
-	position:			relative;
-	padding:			0;
-	margin:				0;
-	left:				-40px;
 }
 h6, h3 {
 	margin:				5px;
@@ -81,9 +83,48 @@ h6, h3 {
 	display:			inline-block;
 	text-align:			center;
 }
-.head-main {
+.head-floristic:hover, 
+.head-greening:hover, 
+.head-main:hover {
 }
-
+.head-main > span {
+	position:			relative;
+	padding:			0;
+	margin:				0;
+	float:				right;
+	/* left:				-110px; */
+}
 .imager {
 	margin:				20px auto;
+}
+.btn {
+	font-size:			24px;	
+	display:			inline-block;	
+	padding:			6px;
+	border-top:			14px solid rgba(34,51,34,0.7);
+	background:			rgba(68,102,68,0.7);
+	box-shadow: 		0px 0 1px rgba(0, 0, 0, 0.8);
+	-webkit-box-shadow: 0px 0 1px rgba(0, 0, 0, 0.8);
+	-moz-box-shadow: 	0px 0 1px rgba(0, 0, 0, 0.8);
+}
+.btn:hover {
+	border-top:			4px solid rgba(255,255,255, 0.4);
+	-webkit-transition:	border-top 0.2s ease 0s;
+}
+.biglink {
+	display:			inline-block;	
+	margin:				0;
+	padding:			0;
+}
+a:hover {
+	color:				#fff;
+	-webkit-transition:	color 0.2s ease 0s;
+}
+.head-line {
+	width:				100%;
+	height:				14px;	
+	position:			relative;
+	bottom:				-14px;
+	background:			rgba(0, 0, 0, 1);
+	z-index:			-1;
 }
