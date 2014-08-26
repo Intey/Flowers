@@ -1,58 +1,64 @@
-/* @import "http://webfonts.ru/import/america.css"; */
 @import "http://webfonts.ru/import/beermoney.css";
-
 html, body, main, nav, header, a, div, span {
 	color:				black;
-	/* font-family:		'America XIX'; */
-	font-family:		'Beer Money';
-	font-size:			24px;
+	/* font-family:		'Beer Money'; */
+	/* font-size:			24px; */
+
+	font-family:		'Arial, sans-serif'; 
+	font-size:			18px;
 	padding:			0;
 	margin:				0;
 }
 html{
-	background:			url(images/light_grey.png);
+	/* background:			url(images/light_grey.png); */
+	background:			#4c4;
 }
 main, nav{
 	padding:			0 5px;
 }
 
 header {
-	margin:				0 auto;
 	padding:			0;
-	background:			rgba(0,0,0,0.4);
+	width:				100%;
+	text-align:			center;
 }
 
 body {
 	width:				750px;
-	background:			rgba(0,0,0,0.2);
+	background:			rgba(255,255,255,1);
+	/* background:			#fff; */
 	margin:				0px auto;
-	padding:			40px 10px;
+	padding:			0 10px 20px 10px;
+}
+body.index {
+	width:				100%;
+	height:				100%;
+	background:			rgba(0, 0, 0, 0);
 }
 
-header { 
-	width:				100%;
-	text-align:			justify; 
-}
 nav {
 	letter-spacing:		1px;
-	display:			inline-block;
+	/* display:			inline-block; */
 	margin:				10px 20px;
+	padding:			5px 10px;
 }
 
 p {
 	padding:			20px 40px;
 }
 a {
-	font-size:			36px;
+	font-size:			26px;
 	text-decoration:	none;
 	cursor:				pointer;
 }
 h6 {
-	font-size:			36px;
+	font-size:			30px;
+	font-weight:		100;
 }
 
 h3 {
-	font-size:			24px;
+	font-size:			22px;
+	font-weight:		100;
 }
 
 ul {
@@ -60,11 +66,20 @@ ul {
 	margin:				0;
 }
 h6, h3 {
-	margin:				5px;
-	padding				0px;
+	margin:				0px;
+	padding:			0px;
+}
+a:hover {
+	color:				#8c8;
+	-webkit-transition:	color 0.2s ease 0s;
+	-moz-transition:	color 0.2s ease 0s;
 }
 .float {
 	float:				left;
+}
+.center {
+	margin:				auto;
+	display:			inline-block;
 }
 
 .floristic {
@@ -79,49 +94,25 @@ h6, h3 {
 	top:				100px;
 }
 
-.head-floristic, 
-.head-greening, 
-.head-main {
-	display:			inline-block;
-	text-align:			center;
-}
-.head-floristic:hover, 
-.head-greening:hover, 
-.head-main:hover {
-}
-.head-main > span {
-	position:			relative;
-	padding:			0;
-	margin:				0;
-	float:				right;
-}
-.imager {
-	margin:				20px auto;
-}
 .btn {
-	font-size:			24px;	
+	margin:				0px;
+	font-size:			20px;	
 	display:			inline-block;	
-	padding:			6px;
-	border-top:			14px solid rgba(34, 51, 34, 0.7);
-	background:			rgba(68,102,68,0.7);
-	box-shadow: 		0px 0 1px rgba(0, 0, 0, 0.8);
-	-webkit-box-shadow: 0px 0 1px rgba(0, 0, 0, 0.8);
-	-moz-box-shadow: 	0px 0 1px rgba(0, 0, 0, 0.8);
-	margin:				1px;
+	padding:			5px 10px;
+	background:			#272;
+	/* background:			rgba(68,102,68,0.7); */
+	/* box-shadow: 		2px -2px 1px rgba(0, 0, 0, 0.8); */
+	/* -webkit-box-shadow: 2px -2px 1px rgba(0, 0, 0, 0.8); */
+	/* -moz-box-shadow: 	0px 0 1px rgba(0, 0, 0, 0.8); */
 }
 .btn:hover {
-	border-top:			4px solid rgba(255,255,255, 0.4);
-	-webkit-transition:	border-top 0.2s ease 0s;
-	-moz-transition:	border-top 0.2s ease 0s;
-	background:			rgba(0, 0, 0, 1);
+	background:			#161;
+	/* background:			rgba(68, 102, 68, 1); */
+	-webkit-transition:	background 0.4s ease 0s;
+	-moz-transition:	background 0.4s ease 0s;
+	transition:			background 0.4s ease 0s;
 }
-.biglink {
-	display:			inline-block;	
-	margin:				0;
-	padding:			0;
-}
-a:hover {
-	color:				#fff;
-	-webkit-transition:	color 0.2s ease 0s;
-	-moz-transition:	color 0.2s ease 0s;
+
+.imager {
+	margin:				20px auto;
 }

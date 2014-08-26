@@ -1,37 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<link rel="stylesheet" href="styles.css" type="text/css" media="screen" charset="utf-8">
-</head>
-<body>
-	<header>
-		<center>
-			<div class="head-floristic">
-				<a class="biglink" href="floristic.html">
-					<h6>Флористика</h6>
-					<h3>Цветочное оформление</h3>
-				</a>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" href="styles.css" type="text/css" media="screen" charset="utf-8">
+	</head>
+	<body>
+		<header>
+			<div class="center">
+				<a class="btn" href="floristic.html"><h6>Флористика</h6><h3>Цветочное оформление</h3></a>
 			</div>
-			<a class="head-main logo biglink" href="index.html">
-				<img src="images/flower.png" alt="logo"/>
-				<span>На главную</span>
-			</a>
-			<div class="head-greening">
-				<a class="biglink" href="greening.html">
-					<h6> Озеленение </h6>
-					<h3>Ландшафтный дизайн</h3>
-				</a>
+			<div class="center">
+				<a class="btn" href="greening.html"><h6>Озеленение</h6><h3>Ландшафтный дизайн</h3></a>
 			</div>
-		</center>
-	</header>
-	<nav>
-		<a class="btn" href="about.html">О нас</a>
-		<a class="btn" href="costs.html">Цены</a>
-		<a class="btn" href="transport.html">Доставка</a>
-		<a class="btn" href="contacts.html">Контакты</a>
-	</nav>
-	<main>
+			<div class="center">
+				<nav>
+					<a class="btn" href="about.html">О нас</a>
+					<a class="btn" href="costs.html">Цены</a>
+					<a class="btn" href="transport.html">Доставка</a>
+					<a class="btn" href="contacts.html">Контакты</a>
+				</nav>
+			</div>
+		</header>
+		<main>
 		<!--lorem-->
 		<p>Et augue vitae nunc tristique vehicula. Suspendisse eget elit. Duis
 		adipiscing dui non quam.</p>
@@ -53,14 +43,14 @@
 				<div><img u="image" src="images/IMG_4284.JPG" alt=""></div>
 			</div>
 		</div>
-	</main>
-	<script src="js/jquery-2.1.0.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/jssor.slider.mini.js" type="text/javascript" charset="utf-8"></script>
-	<script>
-    jQuery(document).ready(function ($) {
-        var options = { $AutoPlay: false };
-        var jssor_slider1 = new $JssorSlider$('slider1_container', options);
-    });
-	</script>
-</body>
+		</main>
+		<script src="js/jquery-2.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jssor.slider.mini.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+jQuery(document).ready(function ($) {
+	var options = { $AutoPlay: false };
+	var jssor_slider1 = new $JssorSlider$('slider1_container', options);
+});
+		</script>
+	</body>
 </html>
