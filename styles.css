@@ -12,7 +12,7 @@ html, body, main, nav, header, a, div, span {
 }
 html{
 	/* background:			url(images/light_grey.png); */
-	background:			#161;
+	background:			#8f8;
 }
 main, nav{
 	padding:			0px;
@@ -22,7 +22,7 @@ header {
 	padding:			0;
 	width:				100%;
 	text-align:			center;
-	background:			#161;
+	background:			#8f8;
 }
 body {
 	width:				750px;
@@ -111,6 +111,9 @@ a:hover {
 	-webkit-transition:	color 0.4s ease 0s;
 	-moz-transition:	color 0.4s ease 0s;
 	transition:			color 0.4s ease 0s;
+}
+.selected {
+	background:			rgba(255, 255, 255, 1);
 }
 
 .imager {
