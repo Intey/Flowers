@@ -2,15 +2,11 @@
 
 html, body, main, nav, header, a, div, span {
 	color:				black;
-
-	/* font-family:		'Arial, sans-serif'; */
-	/* font-size:			18px; */
+	font-family:		'Beer Money';
 	padding:			0;
 	margin:				0;
 }
 html{
-	/* background:			url(images/light_grey.png); */
-	/* background:			#8f8; */
 	background:			url(images/background2.png) repeat-y;
 	background-size:	100% auto;
 }
@@ -19,18 +15,13 @@ main, nav{
 }
 
 header {
-	font-family:		'Beer Money';
-	font-size:			24px;
 	padding:			0;
 	width:				100%;
 	text-align:			center;
-	/* background:			#8f8; */
 }
 body {
-	font-family:		'Arial, sans-serif';
-	font-size:			18px;
+	font-size:			24px;
 	width:				750px;
-	/* background:			url(images/ricepaper_v3.png); */
 	background:			rgba(255, 255, 255, 0.8);
 	margin:				0px auto;
 	padding:			0 0px 20px 0px;
@@ -43,19 +34,15 @@ body.index {
 
 nav {
 	letter-spacing:		1px;
-	/* display:			inline-block; */
+	font-size:			32px;
 	width:				100%;
 	border-top:			5px solid black;
 	border-bottom:		5px solid black;
 }
 
-p {
-	padding:			20px 40px;
-}
-a {
-	font-size:			28px;
-	text-decoration:	none;
-	cursor:				pointer;
+p { 
+	padding:			10px 30px; 
+	margin:				0px;
 }
 
 h3 {
@@ -68,23 +55,29 @@ h6 {
 	font-weight:		100;
 }
 
-ul {
-	padding:			0;
-	margin:				0;
-}
+
 h6, h3 {
 	margin:				0px;
 	padding:			0px;
 }
+
+ul {
+	padding:			0;
+	margin:				0;
+}
+
+a {
+	text-decoration:	none;
+	cursor:				pointer;
+}
+
 a:hover {
 	color:				#f68512;
 	-webkit-transition:	color 0.3s ease-out 0s;
 	-moz-transition:	color 0.3s ease-out 0s;
 	transition:			color 0.3s ease-out 0s;
 }
-.float {
-	float:				left;
-}
+
 .center {
 	margin:				auto;
 	display:			inline-block;
@@ -99,7 +92,6 @@ a:hover {
 	background-size:	100% auto;
 	padding:			0 0 25px 25px;
 	font-family:		'Beer Money';
-	font-size:			24px;
 }
 
 .greening {
@@ -111,26 +103,14 @@ a:hover {
 	background-size:	100% auto;
 	padding:			0 0 25px 25px;
 	font-family:		'Beer Money';
-	font-size:			24px;
 }
 
 .btn {
 	margin:				0px;
-	font-size:			28px;	
 	display:			inline-block;	
 	padding:			5px 10px;
-	/* background:			#4c4; */
-	/* background:			rgba(68,102,68,0.7); */
-	/* box-shadow: 		2px -2px 1px rgba(0, 0, 0, 0.8); */
-	/* -webkit-box-shadow: 2px -2px 1px rgba(0, 0, 0, 0.8); */
-	/* -moz-box-shadow: 	0px 0 1px rgba(0, 0, 0, 0.8); */
 }
-.btn:hover {
-	/* background:			rgba(68, 102, 68, 1); */
-	/* -webkit-transition:	color 0.4s ease 0s; */
-	/* -moz-transition:	color 0.4s ease 0s; */
-	/* transition:			color 0.4s ease 0s; */
-}
+
 .selected {
 	background:			#d3d2d2;
 	color:				#f68512;
