@@ -2,19 +2,15 @@
 <html>
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
-		<link rel="stylesheet" href="styles.css" type="text/css" media="screen" charset="utf-8">
+		<link rel="stylesheet" href="stylesheets/styles.css" type="text/css" media="screen" charset="utf-8">
+		<link rel="stylesheet" href="stylesheets/jssor.css" type="text/css" media="screen" charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
 		<header>
-			<table colspan="0" border="0" width="100%"> <tr> <td colspan=5 height="35" align="center">ООО &quot;Питомник галерея форм&quot; 2014г.</td> </tr> 
-				<tr> <td colspan=5 height="17" align="right">Тел. (903)7471876, (910)4510905</td> </tr> 
-				<tr> <td colspan=5 height="17" align="left">E-mail: galereya_form@mail.ru</td> </tr> 
-			</table> 
 			<div class="center"> 
-				<a class="btn" href="floristic.html"><h3>Флористика</h3><h6>Цветочное оформление</h6></a> </div> 
-			<div class="center"> 
-				<div class="btn selected"><h3>Озеленение</h3><h6>Ландшафтный дизайн</h6> </div> 
+				<a class="btn" href="floristic.html"><h3>Флористика</h3><h6>Цветочное оформление</h6></a> 
+				<div class="btn selected"><h3>Озеленение</h3><h6>Ландшафтный дизайн</h6></div> 
 			</div> 
 			<div class="center"> 
 				<nav>
@@ -27,17 +23,26 @@
 			</div>
 		</header>
 		<main>
-			<div id="slider1_container" class="imager" style="position: relative; top: 0px; left: 0px; width: 700px; height: 500px;">
-				<div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 700px; height: 500px;">
+			<div id="slider1_container" class="imager" >
+				<div u="slides" class="slides">
+					<div><img u="image" src="images/greening/IMG_0563.JPG" alt=""></div>
 					<div><img u="image" src="images/greening/DSC02853.JPG" alt=""></div>
 					<div><img u="image" src="images/greening/DSC03870.JPG" alt=""></div>
 					<div><img u="image" src="images/greening/DSC05719.JPG" alt=""></div>
 					<div><img u="image" src="images/greening/DSC05733.JPG" alt=""></div>
 					<div><img u="image" src="images/greening/DSC05742.JPG" alt=""></div>
-					<div><img u="image" src="images/greening/IMG_0563.JPG" alt=""></div>
 					<div><img u="image" src="images/greening/IMG_0575.JPG" alt=""></div>
 				</div>
+				<!-- Arrow Navigator Skin Begin -->
+				<!-- Arrow Left -->
+				<span u="arrowleft" class="jssora21l">
+				</span>
+				<!-- Arrow Right -->
+				<span u="arrowright" class="jssora21r">
+				</span>
+				<!-- Arrow Navigator Skin End -->
 			</div>
+
 			<table cellspacing="0" border="0">
 				<tr>
 					<td colspan=5 rowspan=2 height="51" align="center" valign=top bgcolor="#FFFFCC"><b>ПРЕЙСКУРАНТ Ландшафтный дизайн, озеленение, благоустройство территорий</b></td>
@@ -819,12 +824,23 @@
 					<td align="left"><br></td>
 				</tr>
 			</table>
+			<table colspan="0" border="0" width="100%"> <tr> <td colspan=5 height="35" align="center">ООО &quot;Питомник галерея форм&quot; 2014г.</td> </tr> 
+				<tr> <td colspan=5 height="17" align="right">Тел.
+						8(964)594-72-82, 8(964)594-79-98</td> </tr> 
+				<tr> <td colspan=5 height="17" align="left">E-mail: flowersong@list.ru</td> </tr> 
+			</table> 
 		</main>
 		<script src="js/jquery-2.1.0.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jssor.slider.mini.js" type="text/javascript" charset="utf-8"></script>
 		<script>
 			jQuery(document).ready(function ($) {
-				var options = { $AutoPlay: false };
+				var options = {
+					$FillMode: 1,
+					$ArrowNavigatorOptions: {
+						$Class: $JssorArrowNavigator$,
+						$ChanceToShow: 2
+					}
+				};
 				var jssor_slider1 = new $JssorSlider$('slider1_container', options);
 			});
 		</script>

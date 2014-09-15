@@ -1,0 +1,42 @@
+/* line 3, ../sass/jssor.sass */
+.jssora21l, .jssora21r, .jssora21ldn, .jssora21rdn {
+  position: absolute;
+  height: 100%;
+  width: 55px;
+  cursor: pointer;
+  display: block;
+  background: rgba(0, 0, 0, 0.6) url(../images/a21.png) center center no-repeat;
+  overflow: hidden;
+}
+
+/* line 12, ../sass/jssor.sass */
+.jssora21ldn {
+  left: 0px;
+  background-position: -12px center;
+}
+
+/* line 15, ../sass/jssor.sass */
+.jssora21rdn {
+  right: 0px;
+  right-background-position: -129px center;
+}
+
+/* line 18, ../sass/jssor.sass */
+.jssora21l {
+  background-position: -6px center;
+  left: 0px;
+}
+/* line 21, ../sass/jssor.sass */
+.jssora21l:hover {
+  background-position: -126px center;
+}
+
+/* line 23, ../sass/jssor.sass */
+.jssora21r {
+  background-position: -60px center;
+  right: 0px;
+}
+/* line 26, ../sass/jssor.sass */
+.jssora21r:hover {
+  background-position: -180px center;
+}
