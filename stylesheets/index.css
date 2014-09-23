@@ -1,38 +1,22 @@
 /* line 7, ../sass/index.sass */
 * {
   font-weight: 100;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
-/* line 9, ../sass/index.sass */
+/* line 10, ../sass/index.sass */
 html, main, body {
-  width: 100%;
-  height: 100%;
+  width: 1000px;
 }
 
 /* line 12, ../sass/index.sass */
 body {
+  width: 1000px;
   margin: 0px auto;
-  background: url(../assets/indexBackground.jpg) no-repeat center fixed;
   background-size: contain;
 }
 
 /* line 16, ../sass/index.sass */
-.floristic, .greening {
-  position: absolute;
-  top: 200px;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  text-align: center;
-}
-/* line 21, ../sass/index.sass */
-.floristic.floristic, .greening.floristic {
-  left: 60px;
-}
-/* line 23, ../sass/index.sass */
-.floristic.greening, .greening.greening {
-  right: 60px;
-}
-
-/* line 25, ../sass/index.sass */
 a {
   text-decoration: none;
   cursor: pointer;
@@ -42,7 +26,7 @@ a {
   color: #255614;
 }
 
-/* line 30, ../sass/index.sass */
+/* line 21, ../sass/index.sass */
 a:hover {
   color: #9a0000;
   -webkit-transition: color 0.3s ease-out 0s;
@@ -50,33 +34,94 @@ a:hover {
   transition: color 0.3s ease-out 0s;
 }
 
-/* line 34, ../sass/index.sass */
+/* line 25, ../sass/index.sass */
 h3, h6 {
   padding: 0;
   margin: 0px 0px 40px 0px;
 }
 
-/* line 37, ../sass/index.sass */
+/* line 28, ../sass/index.sass */
 h3 {
-  font-size: 3em;
+  font-size: 36px;
 }
 
-/* line 39, ../sass/index.sass */
+/* line 30, ../sass/index.sass */
 h6 {
-  font-size: 2em;
+  font-size: 30px;
 }
 
-/* line 41, ../sass/index.sass */
+/* line 32, ../sass/index.sass */
 #playerButton {
   position: absolute;
   text-align: center;
   vertical-align: middle;
   bottom: 0px;
-  width: 100%;
   height: 40px;
+  width: 100%;
   background: #9a0000;
 }
-/* line 49, ../sass/index.sass */
+/* line 40, ../sass/index.sass */
 #playerButton:hover {
   background: rgba(154, 0, 0, 0.5);
+}
+
+/* line 42, ../sass/index.sass */
+.floristic, .greening {
+  text-align: center;
+  position: absolute;
+  top: 200px;
+}
+
+/* line 46, ../sass/index.sass */
+.floristic {
+  left: 60px;
+}
+
+/* line 48, ../sass/index.sass */
+.greening {
+  right: 60px;
+}
+
+/* line 50, ../sass/index.sass */
+.logo {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+}
+/* line 54, ../sass/index.sass */
+.logo img {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+}
+
+/* line 59, ../sass/index.sass */
+.footer {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  color: #255614;
+  margin: 0;
+  padding: 0;
+}
+/* line 66, ../sass/index.sass */
+.footer * {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px;
+}
+/* line 71, ../sass/index.sass */
+.footer .slogan {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+/* line 74, ../sass/index.sass */
+.footer .company {
+  font-size: 24px;
+}
+/* line 76, ../sass/index.sass */
+.footer .phones {
+  font-size: 20px;
 }
