@@ -6,17 +6,16 @@
 
 /* line 10, ../sass/index.sass */
 html, main, body {
-  width: 1000px;
+  height: 100%;
 }
 
 /* line 12, ../sass/index.sass */
 body {
-  width: 1000px;
   margin: 0px auto;
   background-size: contain;
 }
 
-/* line 16, ../sass/index.sass */
+/* line 15, ../sass/index.sass */
 a {
   text-decoration: none;
   cursor: pointer;
@@ -26,7 +25,7 @@ a {
   color: #255614;
 }
 
-/* line 21, ../sass/index.sass */
+/* line 20, ../sass/index.sass */
 a:hover {
   color: #9a0000;
   -webkit-transition: color 0.3s ease-out 0s;
@@ -34,61 +33,45 @@ a:hover {
   transition: color 0.3s ease-out 0s;
 }
 
-/* line 25, ../sass/index.sass */
+/* line 24, ../sass/index.sass */
 h3, h6 {
   padding: 0;
   margin: 0px 0px 40px 0px;
 }
 
-/* line 28, ../sass/index.sass */
+/* line 27, ../sass/index.sass */
 h3 {
   font-size: 36px;
 }
 
-/* line 30, ../sass/index.sass */
+/* line 29, ../sass/index.sass */
 h6 {
   font-size: 30px;
 }
 
 /* line 32, ../sass/index.sass */
-#playerButton {
-  position: absolute;
-  text-align: center;
-  vertical-align: middle;
-  bottom: 0px;
-  height: 40px;
+.content {
   width: 100%;
-  background: #9a0000;
-}
-/* line 40, ../sass/index.sass */
-#playerButton:hover {
-  background: rgba(154, 0, 0, 0.5);
+  display: table;
+  table-layout: fixed;
 }
 
-/* line 42, ../sass/index.sass */
+/* line 37, ../sass/index.sass */
+.floristic, .greening, .logo {
+  display: table-cell;
+  text-align: center;
+}
+
+/* line 41, ../sass/index.sass */
 .floristic, .greening {
-  text-align: center;
-  position: absolute;
-  top: 200px;
+  vertical-align: middle;
 }
 
-/* line 46, ../sass/index.sass */
-.floristic {
-  left: 60px;
-}
-
-/* line 48, ../sass/index.sass */
-.greening {
-  right: 60px;
-}
-
-/* line 50, ../sass/index.sass */
+/* line 44, ../sass/index.sass */
 .logo {
-  position: absolute;
-  top: 100px;
-  width: 100%;
+  vertical-align: middle;
 }
-/* line 54, ../sass/index.sass */
+/* line 46, ../sass/index.sass */
 .logo img {
   display: block;
   margin: 0 auto;
@@ -96,32 +79,56 @@ h6 {
   height: 400px;
 }
 
-/* line 59, ../sass/index.sass */
+/* line 52, ../sass/index.sass */
 .footer {
-  position: absolute;
-  bottom: 50px;
   width: 100%;
+  position: absolute;
+  bottom: 0;
   color: #255614;
   margin: 0;
   padding: 0;
 }
-/* line 66, ../sass/index.sass */
+/* line 59, ../sass/index.sass */
 .footer * {
   display: block;
   margin: 0 auto;
   text-align: center;
-  padding: 5px;
 }
-/* line 71, ../sass/index.sass */
+/* line 63, ../sass/index.sass */
 .footer .slogan {
   font-size: 30px;
   text-transform: uppercase;
+  padding: 5px 0 5px 0;
 }
-/* line 74, ../sass/index.sass */
+/* line 67, ../sass/index.sass */
 .footer .company {
+  padding: 5px 0 5px 0;
   font-size: 24px;
 }
-/* line 76, ../sass/index.sass */
+/* line 70, ../sass/index.sass */
 .footer .phones {
+  padding: 5px 0 5px 0;
   font-size: 20px;
+}
+
+/* line 73, ../sass/index.sass */
+#playerButton {
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+  height: 20px;
+  width: 100%;
+  background: #255614;
+  color: black;
+  padding: 5px 0 5px 0;
+  -webkit-transition: background 0.3s ease-out 0s;
+  -moz-transition: background 0.3s ease-out 0s;
+  transition: background 0.3s ease-out 0s;
+}
+/* line 83, ../sass/index.sass */
+#playerButton:hover {
+  background: #588947;
+  -webkit-transition: background 0.3s ease-out 0s;
+  -moz-transition: background 0.3s ease-out 0s;
+  transition: background 0.3s ease-out 0s;
 }
