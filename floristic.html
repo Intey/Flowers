@@ -40,14 +40,35 @@
 			разглядеть и почувствовать прекрасный порыв человеческой души,
 			создать атмосферу праздника и заставить цветы петь.
 			</p>
-			<div id="slider1_container" class="imager" style="position: relative; top: 0px; left: 0px; width: 600px; height: 300px;">
-				<div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 600px; height: 300px;">
-					<div><img u="image" src="images/IMG_4276.JPG" alt=""></div>
-					<div><img u="image" src="images/IMG_4277.JPG" alt=""></div>
-					<div><img u="image" src="images/IMG_4280.JPG" alt=""></div>
-					<div><img u="image" src="images/IMG_4281.JPG" alt=""></div>
-					<div><img u="image" src="images/IMG_4284.JPG" alt=""></div>
+			<div id="slider1_container" class="imager">
+				<div u="slides" class="slides">
+					<div><img u="image" src="images/floristic/IMG_4289.JPG" alt=""></div>
+					<div><img u="image" src="images/floristic/IMG_4295.JPG" alt=""></div>
+					<div><img u="image" src="images/floristic/IMG_4506.JPG" alt=""></div>
+					<div><img u="image" src="images/floristic/IMG_4643.JPG" alt=""></div>
+					<div><img u="image" src="images/floristic/IMG_4704.JPG" alt=""></div>
+					<div><img u="image" src="images/floristic/BbCtzK2Xx0E.jpg" alt="" ></div>
+					<div><img u="image" src="images/floristic/IMG_4612.jpg" alt=""></div>
+					<div><img u="image" src="images/floristic/IMG_4621.jpg" alt=""></div>
+					<div><img u="image" src="images/floristic/LQ5esGy2K48.jpg" alt=""></div>
+					<div><img u="image" src="images/floristic/Lx5S1siEH6I.jpg" alt=""></div>
+					<div><img u="image" src="images/floristic/_OnQaixgVc4.jpg" alt=""></div>
+					<div><img u="image" src="images/floristic/bcPLIvCJx-c.jpg" alt=""></div>
+					<div><img u="image" src="images/floristic/bvpwuY-vtqM.jpg" alt=""></div>
+					<div><img u="image" src="images/floristic/i6V6Edz8QDw.jpg" alt=""></div>
+					<div><img u="image" src="images/floristic/r4j7pzRAcBg.jpg" alt=""></div>
+					<div><img u="image" src="images/floristic/spq9n4nhXAE.jpg" alt=""></div>
+					<div><img u="image" src="images/floristic/xMo_zcdxfps.jpg" alt=""></div>
+					<div><img u="image" src="images/floristic/x_fb7766be.jpg" alt=""></div>
 				</div>
+				<!-- Arrow Navigator Skin Begin -->
+				<!-- Arrow Left -->
+				<span u="arrowleft" class="jssora21l">
+				</span>
+				<!-- Arrow Right -->
+				<span u="arrowright" class="jssora21r">
+				</span>
+				<!-- Arrow Navigator Skin End -->
 			</div>
 			<table colspan="0" border="0" width="100%">
 				<tr> <td colspan=5 height="17" align="center">Тел. 8(964)594-72-82, 8(964)594-79-98</td> </tr> 
@@ -57,10 +78,16 @@
 		<script src="js/jquery-2.1.0.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jssor.slider.mini.js" type="text/javascript" charset="utf-8"></script>
 		<script>
-jQuery(document).ready(function ($) {
-	var options = { $AutoPlay: false };
-	var jssor_slider1 = new $JssorSlider$('slider1_container', options);
-});
+			jQuery(document).ready(function ($) {
+				var options = {
+					$FillMode: 1,
+					$ArrowNavigatorOptions: {
+						$Class: $JssorArrowNavigator$,
+						$ChanceToShow: 2
+					}
+				};
+				var jssor_slider1 = new $JssorSlider$('slider1_container', options);
+			});
 		</script>
 	</body>
 </html>

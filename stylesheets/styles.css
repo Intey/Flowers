@@ -36,11 +36,13 @@ body {
 /* line 29, ../sass/styles.sass */
 table {
   margin: 0 auto;
-  font-size: 18px;
+  font-size: 14px;
   width: 800px;
+  font-family: sans;
+  font-weight: 100;
 }
 
-/* line 34, ../sass/styles.sass */
+/* line 36, ../sass/styles.sass */
 nav {
   letter-spacing: 1px;
   font-size: 32px;
@@ -48,48 +50,48 @@ nav {
   border-top: 5px solid #9a0000;
   border-bottom: 5px solid #9a0000;
 }
-/* line 35, ../sass/styles.sass */
+/* line 37, ../sass/styles.sass */
 nav * {
   color: #9a0000;
 }
 
-/* line 44, ../sass/styles.sass */
+/* line 46, ../sass/styles.sass */
 p {
   padding: 10px 30px;
   margin: 0px;
 }
 
-/* line 49, ../sass/styles.sass */
+/* line 51, ../sass/styles.sass */
 h3 {
   font-size: 36px;
   font-weight: 100;
 }
 
-/* line 54, ../sass/styles.sass */
+/* line 56, ../sass/styles.sass */
 h6 {
   font-size: 30px;
   font-weight: 100;
 }
 
-/* line 60, ../sass/styles.sass */
+/* line 62, ../sass/styles.sass */
 h6, h3 {
   margin: 0px;
   padding: 0px;
 }
 
-/* line 65, ../sass/styles.sass */
+/* line 67, ../sass/styles.sass */
 ul {
   padding: 0;
   margin: 0;
 }
 
-/* line 70, ../sass/styles.sass */
+/* line 72, ../sass/styles.sass */
 a {
   text-decoration: none;
   cursor: pointer;
 }
 
-/* line 75, ../sass/styles.sass */
+/* line 77, ../sass/styles.sass */
 a:hover {
   color: #255614;
   background: gray;
@@ -98,13 +100,13 @@ a:hover {
   transition: color 0.3s ease-out 0s;
 }
 
-/* line 83, ../sass/styles.sass */
+/* line 85, ../sass/styles.sass */
 .center {
   margin: 0 auto;
   /* display:			inline-block */
 }
 
-/* line 88, ../sass/styles.sass */
+/* line 90, ../sass/styles.sass */
 .floristic, .greening {
   position: absolute;
   width: 380px;
@@ -113,19 +115,19 @@ a:hover {
   padding: 0 0 25px 25px;
 }
 
-/* line 94, ../sass/styles.sass */
+/* line 96, ../sass/styles.sass */
 .floristic {
   left: 300px;
   top: 450px;
 }
 
-/* line 97, ../sass/styles.sass */
+/* line 99, ../sass/styles.sass */
 .greening {
   right: 200px;
   top: 200px;
 }
 
-/* line 101, ../sass/styles.sass */
+/* line 103, ../sass/styles.sass */
 .btn {
   color: #9a0000;
   margin: 0px;
@@ -133,17 +135,17 @@ a:hover {
   padding: 5px 10px;
 }
 
-/* line 108, ../sass/styles.sass */
+/* line 110, ../sass/styles.sass */
 .selected {
   color: black;
 }
 
-/* line 112, ../sass/styles.sass */
+/* line 114, ../sass/styles.sass */
 main > .imager {
   margin: 20px auto;
 }
 
-/* line 114, ../sass/styles.sass */
+/* line 116, ../sass/styles.sass */
 .imager {
   position: relative;
   top: 0px;
@@ -153,7 +155,7 @@ main > .imager {
   background: #fff;
 }
 
-/* line 122, ../sass/styles.sass */
+/* line 124, ../sass/styles.sass */
 .slides {
   cursor: move;
   position: absolute;
