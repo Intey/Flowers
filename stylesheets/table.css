@@ -1,0 +1,18 @@
+/* line 1, ../sass/table.sass */
+.wonder {
+  margin: 10px auto;
+}
+/* line 3, ../sass/table.sass */
+.wonder td {
+  background: #ccc;
+  text-align: center;
+}
+/* line 6, ../sass/table.sass */
+.wonder td:first-child {
+  text-align: left;
+}
+
+/* line 8, ../sass/table.sass */
+.warranty {
+  line-height: 26px;
+}
