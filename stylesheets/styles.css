@@ -17,7 +17,7 @@ main, nav {
   padding: 0px;
 }
 
-/* line 17, ../sass/styles.sass */
+/* line 16, ../sass/styles.sass */
 header {
   padding: 0;
   width: 100%;
@@ -164,4 +164,9 @@ main > .imager {
   top: 0px;
   width: 900px;
   height: 600px;
+}
+
+/* line 133, ../sass/styles.sass */
+.footer {
+  padding-top: 20px;
 }
