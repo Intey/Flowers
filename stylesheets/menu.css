@@ -1,41 +1,39 @@
-/* line 1, ../sass/menu.sass */
+/* line 2, ../sass/menu.sass */
 ul {
   list-style: none;
 }
 
-/* line 3, ../sass/menu.sass */
+/* line 4, ../sass/menu.sass */
 ul.dropdown {
   position: relative;
-  display: inline-table;
 }
-/* line 6, ../sass/menu.sass */
+/* line 7, ../sass/menu.sass */
 ul.dropdown:after {
   content: "";
   clear: both;
   display: block;
 }
-/* line 10, ../sass/menu.sass */
-ul.dropdown ul {
-  display: none;
-  position: absolute;
-  top: 100%;
-  padding: 0;
-}
-/* line 15, ../sass/menu.sass */
-ul.dropdown ul li {
-  float: none;
-  position: relative;
-  background: white;
-}
-/* line 19, ../sass/menu.sass */
-ul.dropdown ul li a {
-  padding: 0.5em 1em;
-}
-/* line 21, ../sass/menu.sass */
+/* line 12, ../sass/menu.sass */
 ul.dropdown li {
   float: left;
 }
-/* line 24, ../sass/menu.sass */
-ul.dropdown li:hover a, ul.dropdown li:hover ul {
+/* line 16, ../sass/menu.sass */
+ul.dropdown li:hover ul, ul.dropdown li:hover ul a {
   display: block;
+}
+/* line 19, ../sass/menu.sass */
+ul.dropdown ul.sub_menu {
+  display: none;
+  position: absolute;
+  top: 50%;
+  padding: 0;
+}
+/* line 25, ../sass/menu.sass */
+ul.dropdown ul.sub_menu li {
+  float: none;
+}
+/* line 28, ../sass/menu.sass */
+ul.dropdown ul.sub_menu li a {
+  font-size: 0.9em;
+  padding: 0.2em 0.3em;
 }

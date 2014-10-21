@@ -1,25 +1,34 @@
+@import vars 
 ul
   list-style:           none
 ul.dropdown 
   position:             relative
-  display:              inline-table
+  //display:              inline-table
   &:after
     content:            ""
     clear:              both
     display:            block
-  ul
-    display:            none
-    position:           absolute
-    top:                100%
-    padding:            0
-    li
-      float:            none
-      position:         relative
-      background:       white
-      a
-        padding:        0.5em 1em
+
   li
     float:              left
+
     &:hover 
-      a, ul
+      ul, ul a
         display:        block
+
+  ul.sub_menu
+    display:            none
+    position:           absolute
+    top:                50%
+    padding:            0
+
+    li
+      float:            none
+
+      a
+        font-size:      0.9em
+        padding:        0.2em 0.3em
+
+
+
+    

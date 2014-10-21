@@ -1,135 +1,145 @@
 @import vars 
 
+@mixin fade($what, $time: 0.3s)
+  -webkit-transition:	        $what $time ease-out 0s
+  -moz-transition:	            $what $time ease-out 0s
+  transition:			        $what $time ease-out 0s
+@mixin link-hover($bg, $fg)
+  background:                   $bg
+  color:                        $fg
+  @include                      fade(color)
+  @include                      fade(background)
+
+  
+
+
 html, body, main, nav, header, a, div, span 
-  color:				black
-  font-family:          "Palatino Linotype", "Book Antiqua", Palatino, serif
-  padding:			    0
-  margin:				0
-  background:           #FFEDB4
+  color:			            $dBlood
+  font-family:                  "Droid serif", "Palatino Linotype", "Book Antiqua", serif
+  padding:			            0
+  margin:				        0
+  background:                   rgba(255,255,255, 0.1)
 
 html
-  /* background:		url(images/background2.png) repeat-y */
-  background-size:	    100% auto
+  background:                   url(../images/backgrounds/F_01.jpg) repeat-y
+  background-size:	            100% auto
 
 main, nav
-  padding:			    0px
+  padding:			            0px
 
 header 
-  padding:  			0
-  width:				100%
-  text-align:			center
-
+  padding:  			        0.2em 0.4em
+  width:				        100%
+  text-align:			        center
 
 body 
-  font-size:			20px
-  width:                1000px
-  background:			rgba(255, 255, 255, 0.8)
-  margin:				0px auto
-  padding:  			0 0px 20px 0px
+  font-size:			        16px
+  width:                        1000px
+  margin:				        0px auto
+  padding:  			        0px 0px 0px 0px
 
 table 
-  margin:				0 auto
-  font-size:			14px
-  width:				800px
-  font-family:          sans
-  font-weight:          100
-
-nav 
-  *
-    color:              $blood
-  letter-spacing:		1px
-  font-size:			32px
-  width:				100%
-  border-top:			5px solid $blood
-  border-bottom:		5px solid $blood
-
+  margin:				        0 auto
+  font-size:			        16px
+  width:				        800px
+  font-family:                  sans
+  font-weight:                  100
 
 p  
-  padding:  			10px 30px 
-  margin:				0px
-
+  padding:  			        0.5em 1em
+  margin:				        0em
 
 h3 
-  font-size:			36px
-  font-weight:	    	100
-
+  font-size:			        2em
+  font-weight:	    	        100
 
 h6 
-  font-size:			30px
-  font-weight:  		100
-
-
+  font-size:			        1.5em
+  font-weight:  		        100
 
 h6, h3 
-  margin:				0px
-  padding:	    		0px
-
-
-ul 
-  padding:	    		0
-  margin:				0
-
-
-a 
-  text-decoration:	    none
-  cursor:				pointer
-
-
-a:hover 
-  color:				$grass
-  background:           gray
-  -webkit-transition:	color 0.3s ease-out 0s
-  -moz-transition:	    color 0.3s ease-out 0s
-  transition:			color 0.3s ease-out 0s
-
-
-.center 
-  margin:				0 auto
-  /* display:			inline-block */
+  margin:				        0px
+  padding:	    		        0px
 
 
 .floristic, .greening
-  position:			    absolute	
-  width:				380px
-  background:			url(images/underbutton.png) no-repeat
-  background-size:	    100% auto
-  padding:			    0 0 25px 25px
+  position:			            absolute	
+  width:				        380px
+  background:			        url(images/underbutton.png) no-repeat
+  background-size:	            100% auto
+  padding:			            0 0 25px 25px
 .floristic
-  left:				    300px
-  top:				    450px
+  left:				            300px
+  top:				            450px
 .greening 
-  right:				200px
-  top:  				200px
+  right:				        200px
+  top:  				        200px
+
+.head
+  margin:                       1.5em 0em
+nav 
+  letter-spacing:		        1px
+  font-size:			        24px
+  width:				        100%
+  border-top:			        0.2em solid $dBlood
+  border-bottom:		        0.2em solid $dBlood
+  *
+    color:                      $blood
+  ul>li
+    overflow:                   hidden
+  ul 
+    padding:	    	        0
+  & > ul
+    margin:                     0.2em
+    li
+      margin:                   0.0em
+
+.sub_menu
+  background:                   beige
 
 .btn 
-  color:            $blood
-  margin:			0px
-  display:			inline-block	
-  padding:			5px 10px
+  color:                        $dBlood
+  margin:			            0em 0em 0em 0em
+  display:			            inline-block	
+  @include fade(background)
 
+  &:hover
+    background:                   $blood
+    @include fade(background)
+
+  & > a 
+    background:                 transparent
+    display:                    block
+    text-decoration:            none
+    padding:		            0.1em 0.5em
+    @include fade(color)
+
+  &:hover > a
+    color:				        $dBlood
+    @include fade(color)
 
 .selected 
-  color:		    black
-
+  text-decoration:              underline
+  padding:		                0.1em 0.5em
 
 main > .imager 
-  margin:			20px auto
+  margin:			            20px auto
 .imager
-  position: 		relative
-  top: 				0px
-  left: 			0px
-  width:	 		900px
-  height: 			600px
-  background:		#fff
+  position: 		            relative
+  top: 				            0px
+  left: 			            0px
+  width:	 		            900px
+  height: 			            600px
+  background:		            #fcfcfc
 
 .slides 
-  cursor: 			move
-  position: 		absolute
-  overflow: 		hidden
-  left: 			0px
-  top: 				0px
-  width: 			900px
-  height: 			600px
+  cursor: 			            move
+  position: 		            absolute
+  overflow: 		            hidden
+  left: 			            0px
+  top: 				            0px
+  width: 			            900px
+  height: 			            600px
 
 .footer
-  padding-top:          20px
+  padding-top:                  20px
