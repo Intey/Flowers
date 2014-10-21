@@ -4,27 +4,28 @@ html, body, main, nav, header, a, div, span {
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   padding: 0;
   margin: 0;
+  background: #FFEDB4;
 }
 
-/* line 9, ../sass/styles.sass */
+/* line 10, ../sass/styles.sass */
 html {
   /* background:		url(images/background2.png) repeat-y */
   background-size: 100% auto;
 }
 
-/* line 13, ../sass/styles.sass */
+/* line 14, ../sass/styles.sass */
 main, nav {
   padding: 0px;
 }
 
-/* line 16, ../sass/styles.sass */
+/* line 17, ../sass/styles.sass */
 header {
   padding: 0;
   width: 100%;
   text-align: center;
 }
 
-/* line 22, ../sass/styles.sass */
+/* line 23, ../sass/styles.sass */
 body {
   font-size: 20px;
   width: 1000px;
@@ -33,7 +34,7 @@ body {
   padding: 0 0px 20px 0px;
 }
 
-/* line 29, ../sass/styles.sass */
+/* line 30, ../sass/styles.sass */
 table {
   margin: 0 auto;
   font-size: 14px;
@@ -42,7 +43,7 @@ table {
   font-weight: 100;
 }
 
-/* line 36, ../sass/styles.sass */
+/* line 37, ../sass/styles.sass */
 nav {
   letter-spacing: 1px;
   font-size: 32px;
@@ -50,48 +51,48 @@ nav {
   border-top: 5px solid #9a0000;
   border-bottom: 5px solid #9a0000;
 }
-/* line 37, ../sass/styles.sass */
+/* line 38, ../sass/styles.sass */
 nav * {
   color: #9a0000;
 }
 
-/* line 46, ../sass/styles.sass */
+/* line 47, ../sass/styles.sass */
 p {
   padding: 10px 30px;
   margin: 0px;
 }
 
-/* line 51, ../sass/styles.sass */
+/* line 52, ../sass/styles.sass */
 h3 {
   font-size: 36px;
   font-weight: 100;
 }
 
-/* line 56, ../sass/styles.sass */
+/* line 57, ../sass/styles.sass */
 h6 {
   font-size: 30px;
   font-weight: 100;
 }
 
-/* line 62, ../sass/styles.sass */
+/* line 63, ../sass/styles.sass */
 h6, h3 {
   margin: 0px;
   padding: 0px;
 }
 
-/* line 67, ../sass/styles.sass */
+/* line 68, ../sass/styles.sass */
 ul {
   padding: 0;
   margin: 0;
 }
 
-/* line 72, ../sass/styles.sass */
+/* line 73, ../sass/styles.sass */
 a {
   text-decoration: none;
   cursor: pointer;
 }
 
-/* line 77, ../sass/styles.sass */
+/* line 78, ../sass/styles.sass */
 a:hover {
   color: #255614;
   background: gray;
@@ -100,13 +101,13 @@ a:hover {
   transition: color 0.3s ease-out 0s;
 }
 
-/* line 85, ../sass/styles.sass */
+/* line 86, ../sass/styles.sass */
 .center {
   margin: 0 auto;
   /* display:			inline-block */
 }
 
-/* line 90, ../sass/styles.sass */
+/* line 91, ../sass/styles.sass */
 .floristic, .greening {
   position: absolute;
   width: 380px;
@@ -115,19 +116,19 @@ a:hover {
   padding: 0 0 25px 25px;
 }
 
-/* line 96, ../sass/styles.sass */
+/* line 97, ../sass/styles.sass */
 .floristic {
   left: 300px;
   top: 450px;
 }
 
-/* line 99, ../sass/styles.sass */
+/* line 100, ../sass/styles.sass */
 .greening {
   right: 200px;
   top: 200px;
 }
 
-/* line 103, ../sass/styles.sass */
+/* line 104, ../sass/styles.sass */
 .btn {
   color: #9a0000;
   margin: 0px;
@@ -135,17 +136,17 @@ a:hover {
   padding: 5px 10px;
 }
 
-/* line 110, ../sass/styles.sass */
+/* line 111, ../sass/styles.sass */
 .selected {
   color: black;
 }
 
-/* line 114, ../sass/styles.sass */
+/* line 115, ../sass/styles.sass */
 main > .imager {
   margin: 20px auto;
 }
 
-/* line 116, ../sass/styles.sass */
+/* line 117, ../sass/styles.sass */
 .imager {
   position: relative;
   top: 0px;
@@ -155,7 +156,7 @@ main > .imager {
   background: #fff;
 }
 
-/* line 124, ../sass/styles.sass */
+/* line 125, ../sass/styles.sass */
 .slides {
   cursor: move;
   position: absolute;
@@ -166,7 +167,7 @@ main > .imager {
   height: 600px;
 }
 
-/* line 133, ../sass/styles.sass */
+/* line 134, ../sass/styles.sass */
 .footer {
   padding-top: 20px;
 }

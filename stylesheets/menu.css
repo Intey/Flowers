@@ -1,0 +1,41 @@
+/* line 1, ../sass/menu.sass */
+ul {
+  list-style: none;
+}
+
+/* line 3, ../sass/menu.sass */
+ul.dropdown {
+  position: relative;
+  display: inline-table;
+}
+/* line 6, ../sass/menu.sass */
+ul.dropdown:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+/* line 10, ../sass/menu.sass */
+ul.dropdown ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  padding: 0;
+}
+/* line 15, ../sass/menu.sass */
+ul.dropdown ul li {
+  float: none;
+  position: relative;
+  background: white;
+}
+/* line 19, ../sass/menu.sass */
+ul.dropdown ul li a {
+  padding: 0.5em 1em;
+}
+/* line 21, ../sass/menu.sass */
+ul.dropdown li {
+  float: left;
+}
+/* line 24, ../sass/menu.sass */
+ul.dropdown li:hover a, ul.dropdown li:hover ul {
+  display: block;
+}

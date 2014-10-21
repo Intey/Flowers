@@ -1,0 +1,25 @@
+ul
+  list-style:           none
+ul.dropdown 
+  position:             relative
+  display:              inline-table
+  &:after
+    content:            ""
+    clear:              both
+    display:            block
+  ul
+    display:            none
+    position:           absolute
+    top:                100%
+    padding:            0
+    li
+      float:            none
+      position:         relative
+      background:       white
+      a
+        padding:        0.5em 1em
+  li
+    float:              left
+    &:hover 
+      a, ul
+        display:        block
