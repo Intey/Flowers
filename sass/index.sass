@@ -1,36 +1,51 @@
 @import vars
 
-=transition($el)
-  -webkit-transition:   $el 0.3s ease-out 0s
-  -moz-transition:      $el 0.3s ease-out 0s
-  transition:           $el 0.3s ease-out 0s
+=fade($what, $time: 0.3s)
+  -webkit-transition:	        $what $time ease-out 0s
+  -moz-transition:	            $what $time ease-out 0s
+  transition:			        $what $time ease-out 0s
+
 
 *
   font-weight:          100
   font-family:          "Palatino Linotype", "Book Antiqua", Palatino, serif
-
 html, main, body
   height:               100%
 
 body
   margin:               0px auto
 
-a
-  text-decoration:	    none
-  cursor:				pointer
-  +transition(color)
-  color:                $grass
-  &:hover 
-    color:				$blood
-    +transition(color)
+
+a, span
+  color:                        $grass
+
+.btn 
+  color:                        $dBlood
+  margin:			            0em 0em 0em 0em
+  display:			            inline-block	
+  +fade(background)
+
+  &:hover
+    background:                 $blood
+    +fade(background)
+    > a
+      color:				    $dBlood
+      +fade(color)
+
+  & > a 
+    background:                 transparent
+    display:                    block
+    text-decoration:            none
+    padding:		            0.1em 0.2em
+    +fade(color)
 
 h3, h6
   padding:              0
-  margin:               0px 0px 5% 0px
+  margin:               0px 0px 2% 0px
 h3
-  font-size:	       	40px
+  font-size:	       	2.3em
 h6
-  font-size:	    	32px
+  font-size:	    	2em
 
 .wrapper
   display:              table
@@ -47,9 +62,9 @@ h6
   display:              inline-block
   text-align:           center
 .floristic
-  margin:               0 0 0 1% 
+  margin:               2% 0% 2% 1% 
 .greening
-  margin:               0 1% 0 0 
+  margin:               2% 1% 2% 0%
 .floristic, .greening
   vertical-align:       middle
   width:                35%
@@ -64,7 +79,7 @@ h6
   width:                100%
   position:             absolute
   bottom:               0
-  color:                $grass
+  color:                $blood
   margin:               0 auto 1% auto
   padding:              0
   *
@@ -72,25 +87,26 @@ h6
     margin:             0 auto
     text-align:         center
   .slogan
-    font-size:          40px
+    font-size:          1.8em
     text-transform:     uppercase
     padding:            1% 0 1% 0
   .company
     padding:            1% 0 1% 0
-    font-size:          32px
+    font-size:          1.4em
   .phones
     padding:            1% 0 1% 0
-    font-size:          26px
+    font-size:          1em
 
 #playerButton
   text-align:           center
   vertical-align:       middle
   height:               5%
-  background:           $grass
-  color:                black
+  background:           $blood
+  color:                $dBlood
   padding:              1% 0 1% 0
-  +transition(background)
+  +fade(background)
   &:hover
-    background:         $grass + #333
-    +transition(background)
-
+    cursor:             pointer
+    background:         $dBlood
+    color:              $blood
+    +fade(background)

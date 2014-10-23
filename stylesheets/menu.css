@@ -4,36 +4,40 @@ ul {
 }
 
 /* line 4, ../sass/menu.sass */
-ul.dropdown {
+.dropdown {
   position: relative;
 }
 /* line 7, ../sass/menu.sass */
-ul.dropdown:after {
+.dropdown:after {
   content: "";
   clear: both;
   display: block;
 }
-/* line 12, ../sass/menu.sass */
-ul.dropdown li {
+/* line 11, ../sass/menu.sass */
+.dropdown li {
   float: left;
 }
-/* line 16, ../sass/menu.sass */
-ul.dropdown li:hover ul, ul.dropdown li:hover ul a {
+/* line 15, ../sass/menu.sass */
+.dropdown li:hover ul, .dropdown li:hover ul a {
   display: block;
 }
-/* line 19, ../sass/menu.sass */
-ul.dropdown ul.sub_menu {
+/* line 18, ../sass/menu.sass */
+.dropdown ul.sub_menu {
   display: none;
   position: absolute;
-  top: 50%;
+  top: 100%;
   padding: 0;
+  margin: 0;
 }
 /* line 25, ../sass/menu.sass */
-ul.dropdown ul.sub_menu li {
+.dropdown ul.sub_menu li.btn {
   float: none;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
-/* line 28, ../sass/menu.sass */
-ul.dropdown ul.sub_menu li a {
+/* line 30, ../sass/menu.sass */
+.dropdown ul.sub_menu li.btn a {
   font-size: 0.9em;
-  padding: 0.2em 0.3em;
+  padding: 0.4em 0.6em;
 }

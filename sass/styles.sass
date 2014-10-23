@@ -1,14 +1,14 @@
 @import vars 
 
-@mixin fade($what, $time: 0.3s)
+=fade($what, $time: 0.2s)
   -webkit-transition:	        $what $time ease-out 0s
   -moz-transition:	            $what $time ease-out 0s
   transition:			        $what $time ease-out 0s
-@mixin link-hover($bg, $fg)
+=link-hover($bg, $fg)
   background:                   $bg
   color:                        $fg
-  @include                      fade(color)
-  @include                      fade(background)
+  +fade(color)
+  +fade(background)
 
   
 
@@ -21,19 +21,19 @@ html, body, main, nav, header, a, div, span
   background:                   rgba(255,255,255, 0.1)
 
 html
-  background:                   url(../images/backgrounds/F_01.jpg) repeat-y
-  background-size:	            100% auto
+  background:                   url(../images/backgrounds/F_01_sm_dbl.jpg) repeat
+  background-size:	            1440px auto
 
 main, nav
   padding:			            0px
 
 header 
   padding:  			        0.2em 0.4em
-  width:				        100%
   text-align:			        center
 
 body 
   font-size:			        16px
+  line-height:                  1.5
   width:                        1000px
   margin:				        0px auto
   padding:  			        0px 0px 0px 0px
@@ -62,68 +62,55 @@ h6, h3
   padding:	    		        0px
 
 
-.floristic, .greening
-  position:			            absolute	
-  width:				        380px
-  background:			        url(images/underbutton.png) no-repeat
-  background-size:	            100% auto
-  padding:			            0 0 25px 25px
-.floristic
-  left:				            300px
-  top:				            450px
-.greening 
-  right:				        200px
-  top:  				        200px
-
-.head
-  margin:                       1.5em 0em
 nav 
-  letter-spacing:		        1px
-  font-size:			        24px
-  width:				        100%
-  border-top:			        0.2em solid $dBlood
-  border-bottom:		        0.2em solid $dBlood
+  font-size:			        16px
+  border-top:			        0.2em solid $grass
+  border-bottom:		        0.2em solid $grass
   *
-    color:                      $blood
+    color:                      $grass
   ul>li
     overflow:                   hidden
-  ul 
-    padding:	    	        0
   & > ul
     margin:                     0.2em
+    padding:	    	        0
     li
       margin:                   0.0em
+      padding:                  0
 
 .sub_menu
   background:                   beige
+  li.btn
+    margin:                     0
 
 .btn 
   color:                        $dBlood
-  margin:			            0em 0em 0em 0em
+  margin:			            0 0.2em
+  padding:		                0.4em
   display:			            inline-block	
-  @include fade(background)
+  +fade(background, 0.1s)
 
   &:hover
-    background:                   $blood
-    @include fade(background)
+    background:                 $grass
+    +fade(background)
+    > a
+      color:				    $dBlood
+      +fade(color)
 
   & > a 
     background:                 transparent
     display:                    block
     text-decoration:            none
-    padding:		            0.1em 0.5em
-    @include fade(color)
+    +fade(color)
 
-  &:hover > a
-    color:				        $dBlood
-    @include fade(color)
 
 .selected 
   text-decoration:              underline
   padding:		                0.1em 0.5em
+  &:hover
+    background:                 transparent
 
-main > .imager 
-  margin:			            20px auto
+main .imager 
+  margin:			            0em auto
 .imager
   position: 		            relative
   top: 				            0px
@@ -143,3 +130,22 @@ main > .imager
 
 .footer
   padding-top:                  20px
+
+.image-grid
+  table
+    text-align:                 center
+  img
+    width:                      18em
+    display:                    inline-block
+    padding:                    1em
+
+.head
+  display: table
+  img
+    display:                    table-cell
+    width:                      200px
+  ul
+    vertical-align:             middle
+    display:                    table-cell
+#vk_groups
+  margin:                       0 auto  

@@ -1,4 +1,4 @@
-/* line 8, ../sass/index.sass */
+/* line 9, ../sass/index.sass */
 * {
   font-weight: 100;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -14,47 +14,69 @@ body {
   margin: 0px auto;
 }
 
-/* line 18, ../sass/index.sass */
-a {
-  text-decoration: none;
-  cursor: pointer;
+/* line 19, ../sass/index.sass */
+a, span {
+  color: #005C16;
+}
+
+/* line 22, ../sass/index.sass */
+.btn {
+  color: #4D0808;
+  margin: 0em 0em 0em 0em;
+  display: inline-block;
+  -webkit-transition: background 0.3s ease-out 0s;
+  -moz-transition: background 0.3s ease-out 0s;
+  transition: background 0.3s ease-out 0s;
+}
+/* line 28, ../sass/index.sass */
+.btn:hover {
+  background: #9a0000;
+  -webkit-transition: background 0.3s ease-out 0s;
+  -moz-transition: background 0.3s ease-out 0s;
+  transition: background 0.3s ease-out 0s;
+}
+/* line 31, ../sass/index.sass */
+.btn:hover > a {
+  color: #4D0808;
   -webkit-transition: color 0.3s ease-out 0s;
   -moz-transition: color 0.3s ease-out 0s;
   transition: color 0.3s ease-out 0s;
-  color: #55CD14;
 }
-/* line 23, ../sass/index.sass */
-a:hover {
-  color: #9a0000;
+/* line 35, ../sass/index.sass */
+.btn > a {
+  background: transparent;
+  display: block;
+  text-decoration: none;
+  padding: 0.1em 0.2em;
   -webkit-transition: color 0.3s ease-out 0s;
   -moz-transition: color 0.3s ease-out 0s;
   transition: color 0.3s ease-out 0s;
 }
 
-/* line 27, ../sass/index.sass */
+/* line 42, ../sass/index.sass */
 h3, h6 {
   padding: 0;
-  margin: 0px 0px 5% 0px;
+  margin: 0px 0px 2% 0px;
 }
 
-/* line 30, ../sass/index.sass */
+/* line 45, ../sass/index.sass */
 h3 {
-  font-size: 40px;
+  font-size: 2.3em;
 }
 
-/* line 32, ../sass/index.sass */
+/* line 47, ../sass/index.sass */
 h6 {
-  font-size: 32px;
+  font-size: 2em;
 }
 
-/* line 35, ../sass/index.sass */
+/* line 50, ../sass/index.sass */
 .wrapper {
   display: table;
   width: 100%;
   height: 70%;
 }
 
-/* line 39, ../sass/index.sass */
+/* line 54, ../sass/index.sass */
 .content {
   width: 100%;
   margin: 0 auto;
@@ -63,85 +85,87 @@ h6 {
   display: table-cell;
 }
 
-/* line 46, ../sass/index.sass */
+/* line 61, ../sass/index.sass */
 .floristic, .greening, .logo {
   display: inline-block;
   text-align: center;
 }
 
-/* line 49, ../sass/index.sass */
+/* line 64, ../sass/index.sass */
 .floristic {
-  margin: 0 0 0 1%;
+  margin: 2% 0% 2% 1%;
 }
 
-/* line 51, ../sass/index.sass */
+/* line 66, ../sass/index.sass */
 .greening {
-  margin: 0 1% 0 0;
+  margin: 2% 1% 2% 0%;
 }
 
-/* line 53, ../sass/index.sass */
+/* line 68, ../sass/index.sass */
 .floristic, .greening {
   vertical-align: middle;
   width: 35%;
 }
 
-/* line 57, ../sass/index.sass */
+/* line 72, ../sass/index.sass */
 .logo {
   vertical-align: middle;
   width: 25%;
 }
-/* line 60, ../sass/index.sass */
+/* line 75, ../sass/index.sass */
 .logo img {
   max-width: 100%;
 }
 
-/* line 63, ../sass/index.sass */
+/* line 78, ../sass/index.sass */
 .footer {
   width: 100%;
   position: absolute;
   bottom: 0;
-  color: #55CD14;
+  color: #9a0000;
   margin: 0 auto 1% auto;
   padding: 0;
 }
-/* line 70, ../sass/index.sass */
+/* line 85, ../sass/index.sass */
 .footer * {
   display: block;
   margin: 0 auto;
   text-align: center;
 }
-/* line 74, ../sass/index.sass */
+/* line 89, ../sass/index.sass */
 .footer .slogan {
-  font-size: 40px;
+  font-size: 1.8em;
   text-transform: uppercase;
   padding: 1% 0 1% 0;
 }
-/* line 78, ../sass/index.sass */
+/* line 93, ../sass/index.sass */
 .footer .company {
   padding: 1% 0 1% 0;
-  font-size: 32px;
+  font-size: 1.4em;
 }
-/* line 81, ../sass/index.sass */
+/* line 96, ../sass/index.sass */
 .footer .phones {
   padding: 1% 0 1% 0;
-  font-size: 26px;
+  font-size: 1em;
 }
 
-/* line 85, ../sass/index.sass */
+/* line 100, ../sass/index.sass */
 #playerButton {
   text-align: center;
   vertical-align: middle;
   height: 5%;
-  background: #55CD14;
-  color: black;
+  background: #9a0000;
+  color: #4D0808;
   padding: 1% 0 1% 0;
   -webkit-transition: background 0.3s ease-out 0s;
   -moz-transition: background 0.3s ease-out 0s;
   transition: background 0.3s ease-out 0s;
 }
-/* line 93, ../sass/index.sass */
+/* line 108, ../sass/index.sass */
 #playerButton:hover {
-  background: #88ff47;
+  cursor: pointer;
+  background: #4D0808;
+  color: #9a0000;
   -webkit-transition: background 0.3s ease-out 0s;
   -moz-transition: background 0.3s ease-out 0s;
   transition: background 0.3s ease-out 0s;

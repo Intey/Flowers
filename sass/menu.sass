@@ -1,14 +1,13 @@
 @import vars 
 ul
   list-style:           none
-ul.dropdown 
+.dropdown 
   position:             relative
   //display:              inline-table
   &:after
     content:            ""
     clear:              both
     display:            block
-
   li
     float:              left
 
@@ -19,15 +18,18 @@ ul.dropdown
   ul.sub_menu
     display:            none
     position:           absolute
-    top:                50%
+    top:                100%
     padding:            0
+    margin:             0
 
-    li
+    li.btn
       float:            none
-
+      display:          block
+      margin:           0
+      padding:          0
       a
         font-size:      0.9em
-        padding:        0.2em 0.3em
+        padding:        0.4em 0.6em
 
 
 
